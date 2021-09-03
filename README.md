@@ -1,4 +1,4 @@
-# JavaScript 🤟🚀
+# JavaScript 🚀
 *** 
 ![JavaScript-400](https://user-images.githubusercontent.com/88351614/131900089-cae6b31f-41e9-46b5-9912-6ec1775c4e8d.png)
 
