@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 08</title>
+</head>
+<body>
+    <header>
+        <h1>Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.</h1>
+    </header>
+    <section>
+        <div>
+            <input type="number" name="valor_hora" id="valor_hora" class="tamanho_input">
+            <label>Informe o valor da hora trabalhada</label><br>
+            <div class="margin">
+                <input type="number" name="quant_hora" id="quant_hora" class="tamanho_input">
+                <label>Quantidades de horas trabalhadas no mês.</label>
+            </div>
+            <div class="margin">
+                <input type="button" value="Calcular" onclick="calcular()">
+                <input type="button" value="Limpar" onclick="limpar_tudo()">
+            </div>
+        </div>
+
+        <div id="res">
+            
+        </div>
+    </section>
+    <footer>
+        <p>Resolvido por <strong>Gustavo Morette</strong> <span style="font-style: normal;">&#x1F91F; &#x1F680;</span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
