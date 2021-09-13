@@ -1,18 +1,18 @@
 function transformar(){
     // Entrada de dados
-    let num = window.document.getElementById('txt1').value 
+    let fahrenheit = window.document.getElementById('txt1').value 
     let res = window.document.getElementById('res')
     let celsius = 0
 
     // Operação
-    if(num === ""){
+    if(fahrenheit === ""){
         window.alert(`[ERRO]: Preencha todos os campos!`)
     }else {
-        num = Number(num)
-        celsius = 5 * ((num-32)/9)
+        fahrenheit = Number(fahrenheit)
+        celsius = 5 * ((fahrenheit-32)/9)
 
         // Dados de saída
-        res.innerHTML = (`Os graus Fahrenheit informado é ${num}.<br>Isso corresponde a ${celsius} graus em celsius.`)
+        res.innerHTML = (`Os graus Fahrenheit informado é ${fahrenheit}.<br>Isso corresponde a ${celsius} graus em celsius.`)
     }
     limpar()
 }

@@ -20,6 +20,17 @@ section{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.39);
 }
 
+#res{
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(70, 142, 235);
+    border-radius: 3px;
+    padding: 10px;
+    font-weight: bolder;
+    text-align: center;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.26);
+}
+
 footer{
     color: white;
     text-align: center;
