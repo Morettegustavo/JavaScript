@@ -5,18 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Exercicio</title>
+    <title>Exercicio 11</title>
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>
+            Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:<br>
+            <hr>
+            1- O produto do dobro do primeiro com metade do segundo. <br>
+            2- A soma do triplo do primeiro com o terceiro. <br>
+            3- O terceiro elevado ao cubo.
+            <hr>
+        </h1>
     </header>
     <section>
         <div>
-            Testando...
+            <label>Informe um número inteiro:</label>
+            <input type="number" name="txt1" id="txt1"> <br>
+            <label>Informe um número inteiro: </label>
+            <input type="number" name="txt2" id="txt2"> <br>
+            <label>Informe um número real:</label>
+            <input type="number" name="txt3" id="txt3"> <br>
+            <input type="button" value="Calcular" onclick="calcular()" class="botao">
+            <input type="button" value="Limpar" onclick="limpar_tudo()" class="botao">
         </div>
         <div id="res">
-            Olá!
+            
         </div>
     </section>
     <footer>
