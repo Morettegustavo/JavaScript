@@ -11,6 +11,10 @@ header{
     text-align: center;
 }
 
+header h1{
+    font-size: 1.2em;
+}
+
 section{
     background-color: white;
     border-radius: 10px;
