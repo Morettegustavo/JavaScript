@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope e var</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            # Scope
+                * Escopo determina a visibilidade de um alguma no JS
+            
+            # Block statement
+            // Vamos iniciar um bloco
+            {
+                // Aqui dentro é um bloco e posso colocar qualquer código
+            } // Aqui fechamos o bloco
+
+            O boco, também criará um novo escopo. Chamados de `block-scoped`
+        
+            ## Var
+            Var é global e poderá funcionar fora de um escopo de bloco
+         */
+        // hoisting - do inglês (elevação)
+         console.log('> existe x antes do bloco? ', x)
+
+       {
+          var x = 0
+       }
+
+       console.log('> existe x depois do bloco?', x)
+    </script>
+</body>
+</html>
