@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaration assignment var</title>
+</head>
+<body>
+    
+    <script>
+        // Variáveis e tipos de dados
+        // declaração or declaration
+        var name
+
+        // assignment or atribuição de variável
+        name = 'Gustavo'
+
+        // que tipo de dado foi colocado na variável
+        console.log(typeof name)
+
+        // agrupamento de declarações
+        let age, isHuman
+
+        age = 20
+        isHuman = true
+        // multiplos argumentos na função
+
+        // concatenando valores
+        console.log(name, age, isHuman)
+
+        // interpolando valores com template literals or template strings
+        console.log(`O ${name} tem ${age} anos`)
+
+        
+        // -------- OBJECT --------
+
+        const person = {
+            name: 'Gustavo',
+            age: 18,
+            weight: 85.6,
+            isAdmin: true
+        }
+
+        console.log(person.name)
+        console.log(`${person.name} tem ${person.age} anos.`)
+
+        // -------- ARRAYS --------
+        const animals = [
+            'Lion',
+            'Monkey',
+            'Cat',
+            {
+                name: 'Dog',
+                age: 3
+            }
+        ]
+        // acessar valores dentro do array
+        console.log(animals[3].name)
+        console.log(animals.length)
+    </script>
+</body>
+</html>
