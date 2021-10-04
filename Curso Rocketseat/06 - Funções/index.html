@@ -9,6 +9,10 @@
 <body>
     
     <script>
+        function fimPrograma(){
+            console.log('fim do programa.')
+            console.log('--------------------------')
+        }
         // _ Functions _
         // criar um aplicatiovo de frases motivacionais 
         
@@ -22,19 +26,18 @@
 
         // executar a função
         createPhrases()
-
-        console.log('fim do programa.')
-        console.log('--------------------------')
+        fimPrograma()
+        
 
         // _ Argumentos e parâmentros _
         // function expression
         // function anonymous
         const sum = function(number1, number2){
-            console.log(number1 + number2)
+            total = number1 + number2
+            return total
         }
-        sum(2, 3) // arguments - argumentos
-        console.log('fim do programa.')
-        console.log('--------------------------')
+        console.log(sum(2, 3)) // arguments - argumentos
+        fimPrograma()
 
         // _ Retronando valores dentro da função _
 
@@ -42,29 +45,83 @@
         let number2 = 25
     
         console.log(`o número 1 é ${number1}`)
-        console.log(`o número 1 é ${number2}`)
+        console.log(`o número 2 é ${number2}`)
         console.log(`a soma é ${sum(number1, number2)}`)
 
+        fimPrograma()
 
         // _ Outra maneira de entender funções _
+            // Função é um liquidificador
+        function fazerSuco(fruta1, fruta2) {
+            return fruta1 + fruta2
+        }
 
+        const copo = fazerSuco('banana', 'maçã')
+        console.log(copo)
 
+        fimPrograma()
         // _ Function scope _
+        let  = subject = 'create video'
+        function createThink(subject){
+            subject = 'study'
+            return subject
+        }
 
+        console.log(subject)
+        console.log(createThink(subject))
 
+        fimPrograma()
         // _ Function Hoisting _
+        sayMyName()
 
+        function sayMyName() {
+            console.log('Gustavo')
+        }
 
+        fimPrograma()
         // _ Arrow function _
 
+        const meuNome = () => {
+            console.log('Gustavo')
+        }
+        meuNome()
 
+        fimPrograma()
         // _ Callbakc function _
 
+        function sayMeuNome(name){
+            console.log(name)
+            name()
+        }
 
+        sayMeuNome(
+            () => {
+                console.log('estou em uma callback')
+            }
+        )
+
+        fimPrograma()
         // _ Funções construtoras _
+        /*
+            function() constructor
 
+            * expressão new
+            * criar um novo objeto
+            * this keyword
+        */
+        function Person(name) {
+            this.name = name
+            this.walk = function() {
+                return this.name +' está andando'
+            }
+        }
+        const gustavo = new Person('Morette')
+        const joao = new Person('joao')
+        console.log(gustavo)
+        console.log(joao)
+        console.log(gustavo.walk())
+        console.log(joao.walk())
 
-        
     </script>
 </body>
 </html>
